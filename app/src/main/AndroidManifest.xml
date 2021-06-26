@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.itplus.quanlysinhvien">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/utt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLySinhVien">
+        <activity android:name=".activity.ThongKeActivity" />
+        <activity android:name=".activity.ThongTinCaNhanNhanVien" />
+        <activity android:name=".activity.ThongTinHoSoSinhVien" />
+        <activity android:name=".activity.TimKiemActivity" />
+        <activity android:name=".activity.NganhActivity" />
+        <activity android:name=".activity.DashboardDaoTao" />
+        <activity android:name=".activity.DoiMatKhauActivity" />
+        <activity android:name=".activity.DashboardActivity" />
+        <activity android:name=".activity.SplashUTT" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ThongTinCaNhanSinhVien" />
+        <activity android:name=".activity.AddActivity" />
+    </application>
+
+</manifest>

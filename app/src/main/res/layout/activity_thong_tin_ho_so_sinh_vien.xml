@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThongTinHoSoSinhVien">
+
+    <androidx.appcompat.widget.Toolbar
+        app:navigationIcon="@drawable/arrow_left_color"
+        app:title="Thông tin"
+        app:titleTextColor="#F5822F"
+        android:background="@color/white"
+        android:id="@+id/toolbarHoSoSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#F5822F"
+        android:layout_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Họ và tên"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Họ và tên"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtHoTenHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Phạm Việt Phong"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Giới tính"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Giới tính"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtGioiTinhHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Nam"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Số ĐT liên hệ"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Số ĐT liên hệ"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtSĐTLienHeHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="0396550949"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Mã sinh viên"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtMaSinhVienHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="69DCTT20114"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="CMTND(cá nhân)"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="CMT nhân dân"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtCMTNDHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="001200001756"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Ngày cấp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:hint="Ngày cấp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNgayCapHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="15/12/2014"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Nơi cấp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Nơi cấp"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNoiCapHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Hà Nội"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Ngày sinh"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:hint="Ngày sinh (dd: dd/mm/yyyy)"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNgaySinhHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="30/01/2000"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Khóa"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Khóa"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtKhoaHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="69"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Ngành"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:padding="10dp"
+                android:background="@null"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinnerNganhHoSoChinhSuaHoSo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Hộ khẩu thường trú"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Hộ khẩu thường trú"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtHoKhauThuongTruHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="48 Quán Thánh, Ba Đình, Hà Nội"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Dân tộc"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtDanTocHoSo"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="Dân tộc"
+                android:text="Kinh"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Tôn giáo"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Tôn giáo"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtTonGiaoHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Không"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Quốc tịch"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Quốc tịch"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtQuocTichHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Việt Nam"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Nơi sinh"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Nơi sinh"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNoiSinhHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Hà Nội"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Đối tượng"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Đối tượng"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtDoiTuongHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Không"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Ngày vào đoàn TNCSHCM"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:hint="Ngày vào Đoàn TNCSHCM"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNgayVaoDoanTNCSHCMHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="20/05/2018"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="Ngày vào Đảng CSVN"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:focusable="false"
+                android:hint="Ngày vào Đảng CSVN"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/edtNgayVaoDangCSVNHoSo"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Không"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:onClick="luuThongTinMoiChinhSuaHoSo"
+                android:background="@drawable/custom_button_information"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="SAVE"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/btnSaveThongTinHoSo"
+                android:layout_width="302dp"
+                android:layout_height="43dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

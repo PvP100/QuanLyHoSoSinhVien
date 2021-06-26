@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard_bg"
+    tools:context=".activity.DashboardDaoTao">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDashboardDaoTao"
+        android:layout_width="match_parent"
+        app:menu="@menu/navi_item"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:onClick="timKiemHoSo"
+            android:id="@+id/imgTimKiemDaoTao"
+            android:background="@drawable/tim_kiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="81dp"
+            android:onClick="thongKeHoSo"
+            android:id="@+id/imgThongKeDaoTao"
+            android:background="@drawable/thong_ke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:onClick="themHoSoSinhVien"
+            android:id="@+id/imgThemHoSo"
+            android:background="@drawable/them_ho_so"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="81dp"
+            android:onClick="thongTinNhanVien"
+            android:id="@+id/imgThongTinCaNhanDaoTao"
+            android:background="@drawable/thong_tin_ca_nhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ThongTinCaNhanNhanVien">
+
+    <androidx.appcompat.widget.Toolbar
+        app:navigationIcon="@drawable/arrow_left_color"
+        app:title="Thông tin"
+        app:titleTextColor="#F5822F"
+        android:background="@color/white"
+        android:id="@+id/toolbarThongTinNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#F5822F"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Mã nhân viên"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtMaNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="NV"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Họ và tên"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="Họ và tên"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtHoTenNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Nguyễn Thái Sơn"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Giới tính"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="Giới tính"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtGioiTinhNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="Nam"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Số ĐT liên hệ"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Số ĐT liên hệ"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtSDTLienHeNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="0396550949"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Email"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Email"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtEmailNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="001200001756"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Ngày sinh"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:focusable="false"
+            android:hint="Ngày sinh (dd: dd/mm/yyyy)"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/edtNgaySinhNhanVien"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="30/01/2000"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <ImageView
+            android:onClick="doiMatKhauNhanVien"
+            android:background="@drawable/doi_mat_khau_nhan_vien"
+            android:layout_marginTop="30dp"
+            android:id="@+id/imgDoiMatKhauNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="luuThongTinNhanVien"
+            android:background="@drawable/custom_button_information"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="SAVE"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnSaveThongTinNhanVien"
+            android:layout_width="302dp"
+            android:layout_height="43dp" />
+    </LinearLayout>
+</LinearLayout>
