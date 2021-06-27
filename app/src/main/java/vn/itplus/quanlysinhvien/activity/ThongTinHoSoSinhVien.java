@@ -8,6 +8,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -52,7 +53,6 @@ public class ThongTinHoSoSinhVien extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thong_tin_ho_so_sinh_vien);
-
 
         maUser = getIntent().getStringExtra("maUser");
         maSV = getIntent().getStringExtra("maSV");
@@ -268,6 +268,14 @@ public class ThongTinHoSoSinhVien extends AppCompatActivity {
     }
 
     private void setDetail(String maSV, String hoTen, String gioiTinh, String soDT, String CMTND, String ngayCap, String noiCap, String ngaySinh, int khoa, String maNganh, String nganh, String HKTT, String danToc, String tonGiao, String quocTich, String noiSinh, String doiTuong, String ngayVaoDoan, String ngayVaoDang) {
+
+        for (int i = 0; i < listNganh.size(); i++) {
+            String checkNganh = listNganh.get(i).getMaNganh();
+            if (maNganh.equals(checkNganh)) {
+                spinner.setSelection(i);
+            }
+        }
+
         edtMaSV.setText(maSV);
         edtMaSV.setEnabled(false);
         edtHoten.setText(hoTen);
@@ -286,13 +294,6 @@ public class ThongTinHoSoSinhVien extends AppCompatActivity {
         edtDoiTuong.setText(doiTuong);
         edtNgayVaoDoan.setText(ngayVaoDoan);
         edtNgayVaoDang.setText(ngayVaoDang);
-
-        for (int i = 0; i < listNganh.size(); i++) {
-            String checkNganh = listNganh.get(i).getMaNganh();
-            if (maNganh.equals(checkNganh)) {
-                spinner.setSelection(i);
-            }
-        }
     }
 
     private void initActionBar() {
@@ -332,6 +333,10 @@ public class ThongTinHoSoSinhVien extends AppCompatActivity {
     }
 
     public void luuThongTinMoiChinhSuaHoSo(View view) {
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+                WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+
         String nganh = spinner.getSelectedItem().toString();
         String maNganhMoi = "";
 
@@ -349,6 +354,10 @@ public class ThongTinHoSoSinhVien extends AppCompatActivity {
             public void onResponse(String response) {
                 if (response.equals("Success")) {
                     Toast.makeText(ThongTinHoSoSinhVien.this, "Thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ThongTinHoSoSinhVien.this, TimKiemActivity.class);
+                    intent.putExtra("maUser", maUser);
+                    intent.putExtra("maNganh", maNganh);
+                    startActivity(intent);
                 }
             }
         }, new Response.ErrorListener() {
