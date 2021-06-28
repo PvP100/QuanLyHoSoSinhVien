@@ -80,7 +80,7 @@ public class SinhVienAdapter extends BaseAdapter implements Filterable {
                 } else {
                     List<SinhVien> list = new ArrayList<>();
                     for (SinhVien sv : sinhVienListFiltered) {
-                        if (sv.getHoTen().toLowerCase().contains(strSearch)) {
+                        if (sv.getHoTen().toLowerCase().contains(strSearch.toLowerCase())) {
                             list.add(sv);
                         }
                     }

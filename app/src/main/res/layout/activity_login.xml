@@ -26,7 +26,7 @@
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="65dp"
             android:background="@drawable/utt"
             android:layout_width="140dp"
             android:layout_height="100dp" />
